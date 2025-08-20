@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "js-yaml": "npm:js-yaml@4.1.0",
+    "std/": "https://deno.land/std@0.224.0/"
+  },
+  "lock": false
+}
