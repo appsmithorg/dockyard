@@ -8,16 +8,12 @@ function generateHeader(): string {
   return IS_LOCAL ? `{\n${INDENT}auto_https off\n}\n\n` : "";
 }
 
-function formatUrl(url: string): string {
-  return IS_LOCAL ? `http://${url}` : url;
-}
-
 function formatService(service: Service): string {
   return `${service.name}:${service.port}`;
 }
 
 function formatBlock(service: Service): string {
-  return `${formatUrl(service.url)} ` +
+  return `${service.url} ` +
     `{\n${INDENT}reverse_proxy ` +
     `${formatService(service)}\n}`;
 }

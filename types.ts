@@ -1,4 +1,5 @@
 export interface Service {
+  dir: string;
   url: string;
   path: string;
   host: string;

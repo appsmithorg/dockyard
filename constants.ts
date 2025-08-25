@@ -12,4 +12,7 @@ export const BASE_PORT = 5001;
 export const CADDYFILE_PATH = `${HOME}/tmp/dockyard/Caddyfile`;
 export const DOCKERFILE_NAME = "Dockerfile";
 export const DOCKER_COMPOSE_PATH = `${HOME}/tmp/dockyard/docker-compose.yml`;
+export const SERVICES_PATH = `${HOME}/tmp/dockyard/services.json`;
 export const DOMAIN_SUFFIX = IS_LOCAL ? URL_LOCAL : URL_SERVER;
+
+export const EMPTY_STRING = "";
